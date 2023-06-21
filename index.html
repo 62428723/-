@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>响应式的导航栏</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/lbt2.css"rel="stylesheet">
+	    <script src="js/jquery-3.3.1.min.js"></script>
+	    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+	    <script src="js/bootstrap.min.js"></script>	
+			
+		<style type="text/css">
+			body{padding: 10px ;
+			display: flex;
+			 justify-content: center;
+								margin:0px;padding:0px;
+			 align-items: center;
+			/* 1vh 意味着值为视口高度的 1%,vh 则与设备视口的高度有关 */
+			  min-height: 100vh;}
+			.container{
+				justify-content: center;
+				display: flex;
+			}
+			#wrapper{
+				background: url('./logo2.png');
+				background-size: cover;
+				width: 100%;
+				height: 450px;			
+			}
+			.aa{
+				float: right;
+			}
+			.aa li{
+				float: left;
+				display: inline;
+				margin: 10px;
+			}
+			.sousuo{
+				margin-left: 100px;
+				width: 300px;
+			}
+			.navbar{
+				margin-bottom: 0;
+			}
+			#main{
+				width: 1200px;
+				
+			}
+			#left{
+				float: left;
+				width: 600px;
+				background-color: azure;
+			}
+			ol li p a{
+				display: inline;
+			}
+			#right{
+				width: 600px;
+				float: right;
+			}
+			#kx li font{
+				color: red;
+			}
+			#jieri li font{
+				color: red
+			}
+			h3{
+				background-color: papayawhip;
+				text-align: center;
+				color: red;
+			}
+			#ff{
+				background-color: aliceblue;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="head">
+		    	
+		        	<div class="top">
+		                <div id="wrapper" >
+		                
+		                
+		                <div class="db">
+		                    <ul class="aa">
+		                        <li>欢迎您,xxx</li>
+		                        <li><a href="">退出</a></li>
+		                        <li><a href="">个人中心</a></li>
+		                        <li><a href="">我的订单</a></li>
+		                        <li><a href="login.html">登录</a></li>
+		                        <li><a href="register.html">注册</a></li>
+		                    </ul>
+		                    
+		                    <div class="sousuo">
+								
+		                    	<div class="input-group">
+		                    		<span class="input-group-addon">
+		                    			<span class="glyphicon glyphicon-search"></span>
+		                    		</span>
+		                    		<input type="text" placeholder="搜索" class="form-control" />
+		                    	</div>
+		                        
+		                    </div>
+		                </div>
+		                
+		                </div>
+		       	 	</div>	
+		<nav class="navbar navbar-inverse " role="navigation">
+			<div class="container"> 
+			<div class="navbar-header">
+				
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+						data-target="#menu">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">美食</a>
+			</div>
+			<div id="menu" class="collapse navbar-collapse" >
+		        <ul class="nav navbar-nav">
+		            <li class="active"><a href="#">生日蛋糕 </a></li>
+		            <li><a href="#">盒子蛋糕</a></li>
+					<li><a href="#">蛋糕</a></li>
+					<li><a href="#">蛋糕</a></li>
+					<li><a href="#">蛋糕</a></li>
+					<li><a href="#">蛋糕</a></li>
+					<li><a href="#">蛋糕</a></li>
+		            <li class="dropdown">
+		                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+		                   	 推荐
+		                    <b class="caret"></b>
+		                </a>
+		                <ul class="dropdown-menu">
+		                    <li><a href="rd.html">人气单品</a></li>
+		                    <li class="divider"></li>			                    
+		                    <li><a href="#">今日热卖</a></li>
+		                    <li><a href="#">今日特价</a></li>
+		                    <li><a href="#">xxxx</a></li>
+		                </ul>
+		            </li>
+		             
+		        </ul>				
+			</div>
+			</div>
+		</nav>
+		<div id="main" >
+			<div id="left">
+				<div>
+					<div >
+  <h3 style="font-family:华文彩云";>最新快讯</h3>
+  <hr>
+      <ul id="kx"style="list-style:none;">
+  <li>
+   <a href="" class="frist">
+  <font>[ 特惠 ]</font> 1月1日店庆 全场八折！</a>
+  </li>
+   <li>
+   <a href="">
+           <font>[ 公告 ]</font>我想对你说</a>
+             </li>
+	  <li>
+		    <a href="">
+	       <font>[ 特惠 ]</font> 12月25日 圣诞狂欢！</a>
+    </li>
+     <li>
+	      <a href="">
+      <font>[ 特惠 ]</font> 1月1日店庆 全场八折！</a>
+	  </li>
+    <li>
+	     <a href="">
+	   <font>[ 公告 ]</font>我想对你说</a>
+   </li>
+	   </ul>
+	   </div>
+	  <div class="newsKx Datatx" >
+	  <h3 style="font-family:华文彩云";>节日提醒</h3>
+	  <hr>
+	  <ul id="jieri" style="list-style:none;">
+	 <li>
+	  <a href="" title="[ 12.25 ] 圣诞节如何选择?">
+	  <font>[ 12.25 ] 圣诞</font> 给她/他一个惊喜</a>
+	  </li>
+	  <li>
+	 <a href="" title="[ 9.9 ] 生日如何选择心仪蛋糕">
+  <font> [Habby Birthday]</font> 每一年都有今天，每一年都更加繁荣</a>
+	  </li>
+	   <li>
+	   <a href="" title="[ 6.21 ] 圣诞节如何选择礼物">
+	 <font>[ 12.25 ] 圣诞</font> 给她/他一个惊喜</a>
+	  </li>
+	  <li>
+	   <a href="" title="[ 6.21 ] 圣诞节如何选择礼物">
+	  <font>[ 12.25 ] 圣诞</font> 给她/他一个惊喜</a>
+			      </li>
+				  <li>
+				   <a href="" title="[ 6.21 ] 圣诞节如何选择礼物">
+				  <font>[ 12.25 ] 圣诞</font> 给她/他一个惊喜</a>
+				  			      </li>
+								  <li>
+								   <a href="" title="[ 6.21 ] 圣诞节如何选择礼物">
+								  <font>[ 12.25 ] 圣诞</font> 给她/他一个惊喜</a>
+								  			      </li>
+												  <li>
+												   <a href="" title="[ 6.21 ] 圣诞节如何选择礼物">
+												  <font>[ 12.25 ] 圣诞</font> 给她/他一个惊喜</a>
+												  			      </li>
+																  <li>
+																   <a href="" title="[ 6.21 ] 圣诞节如何选择礼物">
+																  <font>[ 12.25 ] 圣诞</font> 给她/他一个惊喜</a>
+																  			      </li>
+																				  <li>
+																				   <a href="" title="[ 6.21 ] 圣诞节如何选择礼物">
+																				  <font>[ 12.25 ] 圣诞</font> 给她/他一个惊喜</a>
+																				  			      </li>
+																								  <li>
+																								   <a href="" title="[ 6.21 ] 圣诞节如何选择礼物">
+																								  <font>[ 12.25 ] 圣诞</font> 给她/他一个惊喜</a>
+																								  			      </li>
+	  </ul>
+  </div>
+      </div>
+   </div>
+			                    
+									</div>
+									<div id="right" >
+									<ul class="slides" class="col-12">
+									    
+									    <input type="radio" id="control-1" name="control" checked>
+									    <input type="radio" id="control-2" name="control">
+									    <input type="radio" id="control-3" name="control">
+									    <input type="radio" id="control-4" name="control">
+									    <input type="radio" id="control-5" name="control">
+									   
+									    <li class="slide"></li>
+									    <li class="slide"></li>
+									    <li class="slide"></li>
+									    <li class="slide"></li>
+									    <li class="slide"></li>
+									    
+									    <div class="controls-visible">
+									        <label for="control-1"></label>
+									        <label for="control-2"></label>
+									        <label for="control-3"></label>
+									        <label for="control-4"></label>
+									        <label for="control-5"></label>
+									    </div>
+									</ul>
+									</div>
+			                    <footer>
+									<div class="container-fluid" style="padding-top: 40px;">
+									    <div class="row clearfix">
+									        <div class="col-6 column" >
+									            <div class="" id="ff">
+									                <div class="container">
+									                    <center>
+									
+									                        <p>Copyright© 2021 All Rights Reserved. </p>
+									                        <p>xxx学院--xxxxx</p>
+									                        地址：xx校区（x校区）xxxx区xxxx路xxxxx号 邮编：123456&nbsp;&nbsp;&nbsp; 电话:0000-12345678
+									                        xx校区（分校区）xxxx区xxxx路xxxxx号
+									                        邮编：123456 电话：0000-123456
+									                    </center>
+									
+									                </div>
+									            </div>
+									        </div>
+									    </div>
+									</div>
+									
+								</footer>
+								
+			               
+			
+		
+		</div>
+	</body>
+</html>
+
+
+
+
+
